@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply font-rubik;
+}
+.profile-img{
+    @apply rounded-full mr-3;
+}
+.cont{
+    @apply  mx-auto px-4 ;
+}
+@media screen(sm) {
+    .cont{
+        @apply w-[620px];
+    }
+}
+@media screen(md) {
+    .cont{
+        @apply w-[750px];
+    }
+}
+@media screen(lg) {
+    .cont{
+        @apply w-[1000px]
+    }
+}
+@media screen(xl) {
+    .cont{
+        @apply w-[1200px];
+    }
+}
+
+/* left side  */
+
+.left-side .content li{
+    @apply flex gap-5  pl-4 w-full text-gray-600 ;
+}
+.left-side .content  i{
+    @apply pl-3;
+}
+.left-side .act{
+    @apply border-l-4 border-blue-500  text-black;
+}
+.left-side ul span{
+    @apply hidden;
+  }
+@media screen(lg) {
+    .left-side ul span{
+        @apply block;
+    }
+}
+
+
+/* end left side  */
+/* middle */
+.middle .nav .act{
+    @apply border-b-4 border-blue-500 text-black ;
+}
+/* end middle */
+/* right side */
+.right-side .hachtags .hach-sp{
+    @apply text-gray-500 text-xs leading-none my-0;
+}
+.right-side .hachtags .ha-h{
+    @apply text-black text-lg leading-none my-0;
+}
+/* end right side */
